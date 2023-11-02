@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ZERCURITY</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark nav-user fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/Logo.svg" alt=""> 
+        <span>zercurity</span>
+    </a>
+    <button class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mt-3 mt-lg-0 mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="OsQuery.html">Osquery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#docs">Docs</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-center mb-4 mb-lg-0">
+        <li class="nav-item">
+          <a href="#!" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a href="" class="nav-link btn-account">Create account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="sec-top-osquery">
+  <section class="mb-5">
+    <div class="container" id="osquery">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12 mt-5 mb-3 text-center">
+          <img class="mb-2" src="img/Cyber-Security-Transparent-PNG.png" alt="">
+          <h2 class="mb-4">
+            Application whitelisting
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container wiz" data-aos="zoom-in">
+    <div class="row justify-content-center" id="appblock">
+      <div class="col-12">
+        <h3><img src="img/block.png" alt="...">
+        Application whitelisting vs. blacklisting</h3>
+      </div>
+      <div class="col-6 osq-text">
+        <p>Unlike technologies that use application blacklisting, which prevents undesirable programs from executing, whitelisting is more restrictive and allows only programming that has been explicitly permitted to run. There is no consensus among security experts over which technique -- blacklisting or whitelisting -- is better. Proponents of blacklisting argue application whitelisting is too complex and difficult to manage. Compiling the initial whitelist, for example, requires detailed information about all users' tasks and all the applications they need to perform those tasks. Maintaining the list is also demanding because of the increasing complexity and interconnections of business processes and applications.</p>
+      </div>
+      <div class="col-6 osq-text">
+        <p>Proponents of whitelisting argue it is worth the time and effort needed to proactively protect systems and prevent malicious or inappropriate programs from entering the network. Using a whitelist that allows only applications that have been explicitly approved offers more protection against malicious software, rather than the looser standard used by application blacklists, which permit any software to run unless it has been discovered to be malicious and has been added to the blacklist.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container wiz" data-aos="zoom-in">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h3>How application whitelisting works</h3>
+      </div>
+      <div class="col-6 osq-text">
+        <p>Implementation of application whitelisting begins with building a list of approved applications. The whitelist can be built into the host operating system (OS), or it can be provided by a third-party vendor. The simplest form of whitelisting allows the system administrator (sys admin) to specify file attributes associated with whitelisted applications, such as file name, file path and file size.</p>
+      </div>
+      <div class="col-6 osq-text">
+        <p>Windows AppLocker, which Microsoft added to Windows 7 and Windows Server 2008 R2, allows sys admins to specify which users or groups of users are permitted to -- or not permitted to -- run particular applications. In addition to restricting access to specific applications, AppLocker can be used to restrict users from installing new software, define which versions of a piece of software are permitted to be run and provide control for running licensed software.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="impl" data-aos="fade-up"  id="implement">
+  <section class="mb-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12 mt-5 mb-3 text-center">
+          <img class="mb-2" src="img/interrogate.png" alt="">
+          <h2 class="mb-4">
+            Interrogate your infrastructure
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container wiz" >
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h3>Implementation</h3>
+      </div>
+      <div class="col-6 osq-text">
+        <p>First, before an organization begins deploying the application whitelisting software, it is critically important to compile a comprehensive inventory of the applications that are used throughout the organization. Remember, all of these applications will need to be included in the company's whitelisting policy. The application whitelisting software is designed to enforce endpoint security, so any software that is not explicitly listed within the policy that the company creates will not be allowed to run. This is why it is important to create a comprehensive inventory of the applications that the organization uses. Failure to identify an application and include it in the whitelisting policy will result in the application being made unavailable to users.</p>
+      </div>
+      <div class="col-6 osq-text">
+        <p>The best way to ensure good endpoint security is to identify applications by using the publisher's signature or by using a cryptographic file hash. Most application whitelisting tools will allow you to base your whitelisting policy around both of these identifiers.</p><p>Similarly, building a whitelisting policy that is based primarily on registry keys can expose your organization to various threats to endpoint security simply because it is easy for a malware author to spoof a legitimate application's registry keys.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="impl" data-aos="fade-up"  id="alerts">
+  <section class="mb-5">
+    <div class="container" id="alerts">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12 mt-5 mb-3 text-center">
+          <img class="mb-2" src="img/set.png" alt="">
+          <h2 class="mb-4">
+            Set allerts
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container wiz" >
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h3>Security alerts are the notifications for workload protection plans</h3>
+      </div>
+      <div class="col-6 osq-text">
+        <ul class="ul-style">
+          <li class="pb-3">Security alerts are triggered by advanced detections available when you enable Defender plans for specific resource types.</li>
+          <li class="pb-3">Each alert provides details of affected resources, issues, and remediation steps.</li>
+          <li class="pb-3">Defender for Cloud classifies alerts and prioritizes them by severity.</li>
+          <li class="pb-3">Alerts are displayed in the portal for 90 days, even if the resource related to the alert was deleted during that time. This is because the alert might indicate a potential breach to your organization that needs to be further investigated.</li>
+        </ul>
+      </div>
+      <div class="col-6 osq-text">
+        <ul class="ul-style">
+          <li class="pb-3">Alerts can be exported to CSV format.</li>
+          <li class="pb-3">Alerts can also be streamed directly to a Security Information and Event Management (SIEM) such as Microsoft Sentinel, Security Orchestration Automated Response (SOAR), or IT Service Management (ITSM) solution.</li>
+          <li class="pb-3">Defender for Cloud leverages the MITRE Attack Matrix to associate alerts with their perceived intent, helping formalize security domain knowledge.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-5">
+  <section class="sec-bottom">
+    <div class="container">
+      <div class="form-row justify-content-center">
+        <div class="col-sm-10 col-md-6 col-10 text-center">
+          <img src="img/footer.png" alt="">
+          <h2 class="mb-5">Stay updated!</h2>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-white border-0"><i class="fa-regular fa-envelope"></i></div>
+            </div>
+            <input class="form-control text-center border-0" placeholder="Your email">
+          </div>
+          <button class="btn btn-subscribe wave-2 mt-3 mb-5">subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center pb-5 pt-3">
+      <div class="col-8 col-md-4 text-md-right text-center order-md-1 order-1 my-2">
+        <a class="px-2" href="#!"><img src="img/f1.png" alt=""></a>
+        <a class="px-2" href="#!"><img src="img/f2.png" alt=""></a>
+        <a class="px-2" href="#!"><img src="img/f3.png" alt=""></a>
+        <a class="px-2" href="#!"><img src="img/f4.png" alt=""></a>
+      </div>
+      <div class="col-8 col-md-5 text-center order-md-2 order-3 my-2">
+        <span>
+            &#169; 2018 Zercurity. All Rights Reserved.
+        </span>
+      </div>
+      <div class="col-8 col-md-3 text-md-left text-center order-md-3 order-2 my-2">
+        <a class="link-style-m" href="mailto:hello@zercurity.com">hello@zercurity.com</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<div class="bg-img1-osq">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-3.png" alt="">
+</div>
+
+<div class="bg-img2-osq">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-2.svg" alt="">
+</div>
+
+<div class="bg-img3-osq">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-3.png" alt="">
+</div>
+
+<div class="bg-img4-osq">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-2.svg" alt="">
+</div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/enllax@1.1.0/dist/jquery.enllax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>

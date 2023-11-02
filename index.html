@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ZERCURITY</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark nav-user fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/Logo.svg" alt=""> 
+        <span>zercurity</span>
+    </a>
+    <button class="sandwich d-lg-none" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+      <span><i class="fa-solid fa-burger fa-xl" style="color: #ffffff;"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mt-2 mt-lg-0 mx-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="OsQuery.html" target="_blank">Osquery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#docs">Docs</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a href="#!" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a href="#!" class="nav-link btn-account" data-toggle="modal" data-target="#modal-1">Create account</a>
+        </li>
+        <li class="nav-item ava dropdown text-center">
+          <a class="dropdown-toggle avatar" href="#!" id="dropdownMenuButton" data-toggle="dropdown"></a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item d-flex align-items-center" href="#">Inbox<span class="badge badge-danger">2</span></a>
+            <a class="dropdown-item" href="#">Calendar</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-item">
+              <label class="switch-wrap">
+                <span>Dark Mode</span>
+                <input type="checkbox" id="dark-mode">
+                <span class="lever"></span>
+              </label>
+            </div>
+            <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="sec-top">
+  <section class="sec-top1">
+    <div class="container">
+      <div class="row text-center text-lg-left">
+        <div class="col-lg-6">
+          <h1 class="mb-4">Real-Time Monitoring Your Infrastructure</h1>
+          <div class="mb-4 content">
+            Manage applications. Interrogate assets using SQL. Guarantee compliance.
+          </div>
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-auto mb-3">
+              <button class="btn btn-gs wave-2">Get started</button>
+            </div>
+            <div class="col-auto mb-3">
+              <button class="btn btn-gs wave-2">Contact us</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-stud" src="img/Students.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec-top2">
+    <div class="container mb-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4 text-center mb-4">
+          <div class="card h-100 card-st" data-aos="zoom-in">
+            <img src="img/block.png" class="card-img-top mx-auto mb-2">
+              <div class="card-body d-flex flex-column pb-0">
+                <div class="card-text">
+                  <h4 class="mb-4 font-weight-bold">Block applications</h4>
+                  <p class="mb-5">Automatic whitelisting and protection against malicious applications. Control what applications are run across your infrastructure by defining policies.</p>
+                </div>
+                <a class="mt-auto link-style" href="OsQuery.html#appblock" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-8 col-md-6 col-lg-4 text-center mb-4"> 
+          <div class="card h-100 card-st" data-aos="zoom-in">
+            <img src="img/interrogate.png" class="card-img-top mx-auto mb-2">
+            <div class="card-body d-flex flex-column pb-0">
+              <div class="card-text">
+                <h4 class="mb-4 font-weight-bold">
+                  Interrogate your infrastructure
+                </h4>
+                <p class="mb-5">Use Osquery to query your infrastructure, like a database. You can find about; running processes, installed applications, attached devices, system hardware and even open files.</p>
+              </div>
+              <a class="mt-auto link-style" href="OsQuery.html#implement" target="_blank">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4 text-center mb-4">
+          <div class="card h-100 card-st" data-aos="zoom-in">
+            <img src="img/set.png" class="card-img-top mx-auto mb-2">
+              <div class="card-body d-flex flex-column pb-0">
+                <div class="card-text">
+                  <h4 class="mb-4 font-weight-bold">
+                    Set alerts
+                  </h4>
+                  <p class="mb-5">Trigger allerts on changes that are non-compliant. You can also attach alerts to your scheduled or ad-hoc queries.</p>
+                </div>
+                <a class="mt-auto link-style" href="OsQuery.html#alerts" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 mt-3 text-center">
+        <a href="OsQuery.html" target="_blank">
+          <button class="btn btn-show-more wave-2">show more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="text-center text-md-left">
+          <img src="img/get.png" alt="">
+          <h2 class="pb-3">
+            Get peace of mind,<br> knowing you can guarantee compliance
+          </h2>
+        </div>
+        <ul class="ul-style">
+          <li class="pb-3">Get peace of mind, knowing you can guarantee compliance;</li>
+          <li class="pb-3">Automatic whitelisting of applications;</li>
+          <li class="pb-3">Interrogate assets using Osquery for: monitoring, compliance, incident investigations etc;</li>
+          <li class="pb-3">Full REST API for integrations;</li>
+        </ul>
+          <h5 class="">
+            Get up and running in <a class="link-style" href="#!">5 minutes.</a> <br> No commitment.
+          </h5>
+      </div>
+      <div class="col-6">
+        <img src="img/soviet(r).png" class="img-soviet" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-3">
+  <div class="container" id="about">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-12 mt-5 mb-3 text-center">
+        <img class="mb-2" src="img/frequently.png" alt="">
+        <h2 class="mb-4">
+          Frequently Asked Questions
+        </h2>
+        <span>
+          You can send email with your questions <br> and we`ll give your answer
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-6 col-lg-4 text-center mb-4">
+        <div class="card h-100 card-st" data-aos="fade-up">
+          <img src="img/osquery.png" class="card-img-top img-secure mx-auto">
+            <div class="card-body d-flex flex-column">
+              <div class="card-text">
+                <h6 class="mb-4 font-weight-bold">
+                  Who is Zercurity?
+                </h6>
+                <p class="mb-5">
+                Zercurity is a hosted service. It provides a secure, managed and centralised platform...</p>
+              </div>
+              <a class="mt-auto link-style" href="about.html#whoiszer" target="_blank">Show More</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center mb-4">
+        <div class="card h-100 card-st" data-aos="fade-up">
+          <img src="img/slack-1.png" class="card-img-top img-secure mx-auto">
+            <div class="card-body d-flex flex-column">
+              <div class="card-text">
+                <h6 class="mb-4 font-weight-bold">
+                  Who is Zercurity for?
+                </h6>
+                <p class="mb-5">
+                Zercurity is built for your dorganisation. Small or large. You are required by law, to safeguard your...
+                </p>
+              </div>
+              <a class="mt-auto link-style" href="#!">Show More</a>
+            </div>
+          </div>
+        </div>
+      <div class="col-12 col-sm-6 col-lg-4 text-center mb-4">
+         <div class="card h-100 card-st" data-aos="fade-up">
+          <img src="img/cat.png" class="card-img-top img-secure mx-auto">
+            <div class="card-body d-flex flex-column">
+              <div class="card-text">
+                <h6 class="mb-4 font-weight-bold">
+                  Is my data secure?
+                </h6>
+                <p class="mb-5">
+                  We strive to ensure that the data stored within Zercurity is a secure as possible. It our priorit...
+                </p>
+              </div>
+              <a class="mt-auto link-style" href="#!">Show More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 mt-3 mb-5 pb-5 text-center">
+        <a href="about.html" target="_blank">
+          <button class="btn btn-show-more wave-2">show more</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec-4">
+  <div class="container mt-5">
+    <div class="row pb-5 mb-5">
+      <div class="col-12 col-sm-4 text-center text-md-left mb-2">
+        <img class="img-zertech" src="img/zertech.png" alt="">
+        <h2>
+          Zercurity <br> Technology
+        </h2>
+        <img class="img-group" src="img/Group.png" alt="">
+      </div>
+      <div class="col-sm-8">
+        <div class="row justify-content-center">
+          <div class="col-10 col-md-4 text-center my-2">
+            <h2>
+              100%
+            </h2>
+            <span>
+              SaaS Technology
+            </span>
+            <h2 class="mt-2">
+              124
+            </h2>
+            <span>
+              Active projects
+            </span>
+          </div>
+          <div class="col-10 col-md-4 text-center my-2">
+            <h2 class="mt-2">
+              100,000
+            </h2>
+            <span>
+              Endpoints per tenant
+            </span>
+            <h2 class="mt-2">
+              1,400+
+            </h2>
+            <span>
+              Built queries
+            </span>
+          </div>
+          <div class="col-10 col-md-4 text-center my-2">
+            <h2 class="mt-2">
+              100+
+            </h2>
+            <span>
+              Threat intel sources
+            </span>
+            <h2 class="mt-2">
+              200+
+            </h2>
+            <span>
+              Customers
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="part-log">
+  <div class="pt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/intel.png" alt="">
+        </div>
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/amazon.png" alt="">
+        </div>
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/Behance.png" alt="">
+        </div>
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/facebook.png" alt="">
+        </div>
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/slack.png" alt="">
+        </div>
+        <div class="col-md-2 col-6 my-3 text-center">
+          <img class="logos-dm" src="img/IBM.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec-5 sec-bottom">
+  <div class="container">
+    <div class="form-row justify-content-center">
+      <div class="col-sm-10 col-md-6 col-10 text-center">
+        <img src="img/footer.png" alt="">
+        <h2 class="mb-5">Stay updated!</h2>
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-white border-0"><i class="fa-regular fa-envelope"></i></div>
+          </div>
+          <input class="form-control text-center border-0" placeholder="Your email">
+        </div>
+        <button class="btn btn-subscribe wave-2 mt-3 mb-5">subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center pb-5 pt-3">
+    <div class="col-8 col-md-4 text-md-right text-center order-md-1 order-1 my-2">
+      <a class="px-2" href="#!"><img src="img/f1.png" alt=""></a>
+      <a class="px-2" href="#!"><img src="img/f2.png" alt=""></a>
+      <a class="px-2" href="#!"><img src="img/f3.png" alt=""></a>
+      <a class="px-2" href="#!"><img src="img/f4.png" alt=""></a>
+    </div>
+    <div class="col-8 col-md-5 text-center order-md-2 order-3 my-2">
+      <span>
+          &#169; 2018 Zercurity. All Rights Reserved.
+      </span>
+    </div>
+    <div class="col-8 col-md-3 text-md-left text-center order-md-3 order-2 my-2">
+      <a class="link-style-m" href="mailto:hello@zercurity.com">hello@zercurity.com</a>
+    </div>
+  </div>
+</section>
+
+
+<div class="bg-img1">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-3.png" alt="">
+</div>
+
+<div class="bg-img2">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-2.svg" alt="">
+</div>
+
+<div class="bg-img3">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-3.png" alt="">
+</div>
+
+<div class="bg-img4">
+  <img data-enllax-ratio="0.25" data-enllax-type="foreground" src="img/Bg-2.svg" alt="">
+</div>
+
+<div class="modal modal-style-1 fade" id="modal-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <h2 class="text-center" data-dismiss="modal">
+              <a href="#!">Personalize your Newswire</a>
+            </h2>
+            <section class="modal-box-1">
+              <h6 class="mb-3">
+                Departments
+              </h6>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Agriculture</span></a></div>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Commerce</span></a></div>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Agriculture</span></a></div>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Commerce</span></a></div>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Agriculture</span></a></div>
+              <div>
+                <a href="#!" class="link-style-m1"><span class="square align-middle"></span><span class="align-middle">Commerce</span></a></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/enllax@1.1.0/dist/jquery.enllax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
